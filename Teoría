@@ -1,3 +1,19 @@
 Pytorch
-   Permite ejecutar la Unidad de Procesamiento Graficos para acelerar los calculos númericos haciendo uso de la programación de tensores. 
    
+   -Permite ejecutar la Unidad de Procesamiento Graficos para acelerar los calculos númericos haciendo uso de la programación 
+    de tensores. 
+   
+   -Construye redes neuronales construidas sobre un sistema autogradiente
+   
+   *TORCH.NN
+    Biblioteca de redes neuronales profundamente integrada con Autograd diseñada para la máxima flexibilidad
+   
+   *TORCHVISION
+    Biblioteca que consta de conjuntos de datos populares, arquitecturas de modelos y transformaciones de imágenes comunes para 
+    la visión por computadora
+
+h5py
+   -Permite almacenar grandes cantidades de datos númericos y manipular facilmente los datos
+
+Shutil
+   -Este modulo incluye operaciones de archivos de alto nivel como copiar y archivar
