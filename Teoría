@@ -17,3 +17,55 @@ h5py
 
 Shutil
    -Este modulo incluye operaciones de archivos de alto nivel como copiar y archivar
+
+PREPARAR UN DATASET
+   1) Seleccionar la data
+      Kaggle
+      Github
+      Reddit
+      Web Scraping 
+      SocialBlade
+      
+      DEL DATASET CONSEGUIDO SE PUEDE SEPARAR DE LA SIGUIENTE MANERA
+      
+      TRAIN: 70% 
+                  Conocemos la salida deseada.
+                  La red hace el aprendizaje 
+            
+      VALID: 20% 
+                 Al mismo tiempo que las epocas de entranamiento para evitar el sobre-aprendizaje y ver que tanto nuestra red puede 
+                 aprender de nuevos ejemplos para no caer en un tema de memorizacion
+      
+      TEST: 10% No conocemos la salida deseada
+      
+      
+   2)Procesar la data
+         
+     2.1) Text File
+            
+     2.2) Relational Database
+     2.3) CSV
+     
+     Se debe hacer un procesamiento segun de donde haya provenido (Según comas, puntos, filas, columnas) 
+     Seleccionar los features(Caracteristicas que nos permitiran hacer una predicción de un problema), el features debe estar totalmente
+     relacionado con la imagen, no debe haber caracteristicas que no lo relacionen
+     Analizar la data para saber si se debe agregar o eliminar datos
+   
+   3)Transformar la data
+   Lo ideal es trabajar con los features y los class labels como vectores 
+   
+CNN
+Existen 4 operaciones principales en las CNN
+1) Convolution
+2) Non Linearity(ReLU)
+3) Pooling or Sub Sampling
+4) Classification(Fully Connected Layer)
+
+Adicionales
+1) Dropout
+2) Flatten
+3) Softmax
+
+*La elección del orden y cantidad de operaciones es un arte*
+
+  
