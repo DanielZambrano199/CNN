@@ -1,4 +1,3 @@
-# coding=utf-8
 import torch.nn as nn
 from torchvision import models
 import torch
@@ -54,27 +53,7 @@ class CNN(nn.Module):
         
         if not cargar_pesos:
             Vgg16mod = models.vgg16(pretrained = True)
-            self._init_pesos()
-            for i in range(len(self.frontal.state_dict().items())):
-                list(self.frontal.state_dict().items())[i][1].data[:] = list(Vgg16mod.state_dict().items())[i][1].data[:]
-                
-    def forward(self,x):
-        x = self.frontal(x)
-        x = self.fondo(x)
-        x = self.capa_salida(x)
-        return x
-    
-    def _init_pesos(self):
-        for j in self.modules():
-            if isinstance(j, nn.Conv2d):
-                nn.init.normal_(j.weight, std=0.01)
-                if j.bias is not None:
-                    nn.init.constant_(j.bias, 0)
-            elif isinstance(j, nn.BatchNorm2d):
-                nn.init.constant_(j.weight, 1)
-                nn.init.constant_(j.bias, 0)
-                
-                
+           
 def crear_capa(config, Ent_Canales = 3,lote=False,dilation = False):
     if dilation:
         dilatacion = 2
